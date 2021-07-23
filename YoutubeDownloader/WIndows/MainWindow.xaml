@@ -1,0 +1,26 @@
+﻿<Window x:Class="YoutubeDownloader.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:YoutubeDownloader"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="553.25" Width="800" MinWidth="450" MinHeight="450"
+        ResizeMode="CanMinimize">
+    <Grid>
+        <TextBox x:Name="tbUrl" Height="23" Margin="15,10,147,0" TextWrapping="NoWrap" VerticalAlignment="Top" AcceptsReturn="False" TextAlignment="Left" VerticalContentAlignment="Center"/>
+        <Button x:Name="btnFind" Content="Add" HorizontalAlignment="Right" Margin="0,10,30,0" VerticalAlignment="Top" Width="112" Height="23" Click="BtnInfo_Click"/>
+        <ScrollViewer Margin="15,65,10,40">
+            <StackPanel x:Name="stackPanel"/>
+        </ScrollViewer>
+        <Button x:Name="btnDownloadAll" Content="Download all" HorizontalAlignment="Left" Margin="265,38,0,0" VerticalAlignment="Top" Width="90" Height="22" Click="BtnDownloadAll_Click"/>
+        <ComboBox x:Name="cbFormat" HorizontalAlignment="Left" Margin="15,38,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="CbFormat_SelectionChanged" Height="22"/>
+        <ComboBox x:Name="cbExt" HorizontalAlignment="Left" Height="22" Margin="140,38,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnConfig" HorizontalAlignment="Right" Height="25" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="25" Click="BtnConfig_Click">
+            <Image Source="iconfinder_Configuration-2-01_1976057.ico"/>
+        </Button>
+        <Label x:Name="labelFindRes" HorizontalAlignment="Right" Margin="0,39,30,0" VerticalAlignment="Top" Width="180" Height="21" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"/>
+        <CheckBox x:Name="cbRemoveAfter" Content="Remove after download" HorizontalAlignment="Left" Margin="360,38,0,0" VerticalAlignment="Top" Height="22" VerticalContentAlignment="Center"/>
+
+    </Grid>
+</Window>

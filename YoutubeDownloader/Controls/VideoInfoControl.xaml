@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="YoutubeDownloader.VideoInfoControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:YoutubeDownloader"
+             mc:Ignorable="d" d:DesignWidth="800" Height="100" MinHeight="100" MinWidth="300" VerticalAlignment="Top" Margin="0,3,10,0">
+    <Grid>
+        <Border BorderBrush="Black" BorderThickness="2"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="80" Margin="10,10,0,0" VerticalAlignment="Top" Width="160"/>
+        <TextBlock x:Name="tbName" TextWrapping="NoWrap" Height="24" TextAlignment="Left" Margin="175,10,40,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cbFormat" HorizontalAlignment="Right" Margin="0,39,137,0" VerticalAlignment="Top" Width="120" SelectionChanged="CbFormat_SelectionChanged"/>
+        <Button x:Name="btnDownLoad" Content="Download" HorizontalAlignment="Right" Margin="0,39,10,0" VerticalAlignment="Top" Width="122" RenderTransformOrigin="-0.328,2.25" Height="22" Click="BtnDownload_Click"/>
+        <ProgressBar x:Name="progBar" Height="16" Margin="175,0,10,10" VerticalAlignment="Bottom" Padding="0,0,3,0"/>
+        <Label x:Name="labelLog" Height="16" Margin="175,74,10,0" VerticalAlignment="Top" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="0"/>
+        <ComboBox x:Name="cbExt" HorizontalAlignment="Right" Height="22" Margin="0,39,262,0" VerticalAlignment="Top" Width="120" SelectionChanged="CbExt_SelectionChanged"/>
+        <Button x:Name="btnClose" HorizontalAlignment="Right" Height="25" Margin="0,10,10,0" VerticalAlignment="Top" Width="25" Click="BtnClose_Click">
+            <Image Source="close_111152.ico"/>
+        </Button>
+    </Grid>
+</UserControl>
