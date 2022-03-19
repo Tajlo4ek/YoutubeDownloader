@@ -26,6 +26,7 @@ namespace YoutubeDownloader
             ytdl = new YoutubeDL();
             ytdl.SetFFMpegPath("Resources/ffmpeg.exe");
             ytdl.SetYoutubeDLPath("Resources/youtube-dl.exe");
+            ytdl.SetMaxThreadCount(3);
 
             System.Globalization.CultureInfo ci = new System.Globalization.CultureInfo("en-US");
             System.Threading.Thread.CurrentThread.CurrentCulture = ci;
